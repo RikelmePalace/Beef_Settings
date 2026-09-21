@@ -1,4 +1,4 @@
-yt-dlp>=2025.01.01
+yt-dlp[default]>=2026.08.19
 flask
 Pillow
 pypdf

@@ -42,27 +42,29 @@ Para a função de baixar músicas em MP3 funcionar corretamente, você precisa 
 
 ---
 
-### 🔧 Passo 3: Instalar as Dependências do Python
-Abra o **Terminal** (ou **Prompt de Comando / PowerShell**) na pasta do projeto e execute:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### ▶️ Passo 4: Iniciar a Aplicação
-Com tudo configurado, rode o comando:
+### ▶️ Passo 3: Iniciar a Aplicação
+Abra o **Terminal** (ou **Prompt de Comando / PowerShell**) e rode o comando:
 
 ```bash
 python app.py
 ```
 
-Você verá mensagens no terminal indicando que o servidor está rodando.
+Antes de iniciar o servidor, o programa verifica o `requirements.txt`. Se alguma
+biblioteca estiver ausente ou com uma versão incompatível, ela será instalada
+automaticamente no mesmo Python usado para executar o comando.
+
+Se preferir instalar manualmente, ou se for iniciar a aplicação com Gunicorn, execute:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Se a instalação automática falhar, confira as mensagens do terminal, sua conexão com
+a internet e as permissões do ambiente Python.
 
 ---
 
-### 🌐 Passo 5: Acessar no Navegador
+### 🌐 Passo 4: Acessar no Navegador
 Abra o seu navegador de internet (Chrome, Edge, Firefox, etc.) e acesse:
 
 👉 **[http://localhost:5000](http://localhost:5000)** (ou `http://127.0.0.1:5000`)
